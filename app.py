@@ -3,7 +3,7 @@ from flask import Flask, render_template,request,redirect,session
 from flask_pymongo import pymongo
 from pymongo import results
 from bson.json_util import dumps
-CONNECTION_STRING = "mongodb+srv://dheeraj97:fashionstore@cluster0.bwjys.mongodb.net/FashionStore?retryWrites=true&w=majority"
+CONNECTION_STRING = "mongodb+srv://SandeepG:fashionstore@cluster0.bwjys.mongodb.net/FashionStore?retryWrites=true&w=majority"
 client = pymongo.MongoClient(CONNECTION_STRING)
 db = client.get_database('FashionStore')
 user_collection = pymongo.collection.Collection(db, 'users')
